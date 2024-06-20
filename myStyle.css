@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(51, 229, 146);
+}
+
+header {
+    background-color: rgb(51, 229, 146);
+    padding: 70px;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.3em;
+    color: #ffffff;
+    text-align: left;
+}
+
+p#bottomText {
+    margin: 180px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+p {
+    margin: 50px 0 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-box {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    height: 300px;
+    overflow: visible;
+}
+
+.hero {
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.hero img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.hero-box:hover .hero img {
+    transform: scale(1.1);
+}
+
+.selected-hero[data-hero="1"] img:hover,
+.selected-hero[data-hero="6"] img:hover,
+.selected-hero[data-hero="13"] img:hover,
+.selected-hero[data-hero="18"] img:hover,
+.selected-hero[data-hero="23"] img:hover,
+.selected-hero[data-hero="28"] img:hover {
+    filter: brightness(120%);
+}
+
+    
+    .divider {
+    width: 100%;
+    margin-top: 50px;
+    border-top: none;
+    }
+    
+    .superman-logo {
+    max-width: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    }
